@@ -1,0 +1,241 @@
+#root {
+  height: 95%;
+  width: 95%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.container__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  height: 100%;
+  padding: 20px 10px;
+  background-color: #202c33;
+
+  img{
+    filter: brightness(0) saturate(100%) invert(81%) sepia(5%) saturate(12%) hue-rotate(186deg) brightness(95%) contrast(88%);
+  }
+}
+
+img {
+  width: 25px;
+  height: 25px;
+  /* filter: brightness(0) saturate(100%) invert(81%) sepia(5%) saturate(12%) hue-rotate(186deg) brightness(95%) contrast(88%); */
+}
+
+.menu__state,
+.menu__configure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu__configure>img:last-of-type {
+  width: 35px;
+  height: 35px;
+}
+
+.state__message {
+  position: relative;
+}
+
+.state__message>span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: #00A884;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container__contact,
+.container__data {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 15px;
+}
+
+.container__contact {
+  flex-grow: 1;
+  min-width: 470px;
+  padding: 0;
+  background-color: #111b21;
+}
+
+.contact__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 15px;
+  padding: 0 20px;
+  height: 25px;
+  color: white;
+
+  .header__img {
+    display: flex;
+    width: 75px;
+    justify-content: space-between;
+  }
+}
+
+.contact__search {
+  display: flex;
+  align-items: center;
+  background-color: #202c33;
+  height: 50px;
+  border-radius: 10px;
+  margin: 0 15px;
+  justify-content: space-between;
+  padding: 0 60px 0 20px;
+  gap: 20px;
+
+  .search__img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search__input {
+    height: 90%;
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    color: white;
+  }
+
+  .search__input::placeholder {
+    color: #7A96A0;
+    font-size: 15px;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  gap: 10px;
+  margin: 0 15px;
+  padding: 0 5px;
+
+  .buttons__btn {
+    padding: 0 10px;
+    height: 35px;
+    border: none;
+    background-color: #26353d;
+    color: #7A96A0;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+
+  .buttons__btn-active {
+    padding: 0 10px;
+    height: 35px;
+    border: none;
+    background-color: #0a332c;
+    color: #009D5F;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+}
+
+.contact__chat {
+  overflow-y: scroll;
+  padding-left: 15px;
+  color: #7A96A0;
+}
+
+
+
+.chat__friend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 72px;
+  border-bottom: 1px solid #222e35;
+
+  .chat__photo {
+    min-width: 45px;
+    min-height: 45px;
+    border-radius: 50%;
+    background-color: rgb(73, 71, 71);
+  }
+}
+
+
+
+.chat__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.content__comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .commnet__name {
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+  }
+}
+
+.container__data {
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 30px;
+  background-color: #222e35;
+  position: relative;
+  text-align: center;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #D0D5D8;
+  }
+
+  p {
+    max-width: 700px;
+    color: #8696A0;
+  }
+
+  button {
+    height: 40px;
+    max-width: 500px;
+    font-size: 15px;
+    border-radius: 40px;
+    padding: 0 20px;
+    background-color: #00A884;
+    color: black;
+    border: none;
+  }
+
+  span{
+    position: absolute;
+    bottom: 50px;
+    color: #8696A0;
+  }
+}
+
+.data__logo {
+  filter: none;
+  width: 320px;
+  height: 188px;
+}
