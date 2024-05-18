@@ -1,60 +1,70 @@
 export const Chat = ({ chatHeader, chatSearch, chatMenu, elNoob, mariaLopez, personChat, groupChat, women, pelon }) => {
     const chats = [
         {
+            id: 1,
             foto: pelon,
             nombre: 'El noob',
             ultimoComentario: 'Me ayudas a lvl pls :c',
             fechaUltimoComentario: 'Lunes'
         },
         {
+            id: 2,
             foto: mariaLopez,
             nombre: 'María López',
             ultimoComentario: 'Nos vemos mañana.',
             fechaUltimoComentario: 'Martes'
         },
         {
+            id: 3,
             foto: personChat,
             nombre: '+1234567890',
             ultimoComentario: 'Llámame cuando puedas.',
             fechaUltimoComentario: '2024-05-15'
         },
         {
+            id: 4,
             foto: groupChat,
             nombre: 'Grupo de Estudio',
             ultimoComentario: '¿Quién puede traer los libros?',
             fechaUltimoComentario: '2024-05-15'
         },
         {
+            id: 5,
             foto: elNoob,
             nombre: 'Carlos Martínez',
             ultimoComentario: 'Te envié el documento.',
             fechaUltimoComentario: '2024-05-15'
         },
         {
+            id: 6,
             foto: women,
             nombre: 'Laura Gómez',
             ultimoComentario: 'Gracias por la ayuda.',
             fechaUltimoComentario: '14:20'
         },
         {
+            id:7,
             foto: groupChat,
             nombre: 'Familia',
             ultimoComentario: 'La cena está lista.',
             fechaUltimoComentario: '2024-05-15'
         },
         {
+            id:8,
             foto: personChat,
             nombre: '+0987654321',
             ultimoComentario: '¿Dónde estás?',
             fechaUltimoComentario: '2024-05-15'
         },
         {
+            id:9,
             foto: personChat,
             nombre: 'Amigos de la Universidad',
             ultimoComentario: '¿Vamos al cine el viernes?',
             fechaUltimoComentario: '2024-05-15'
         },
         {
+            id:10,
             foto: women,
             nombre: 'Ana Fernández',
             ultimoComentario: 'Nos vemos luego.',
@@ -84,7 +94,7 @@ export const Chat = ({ chatHeader, chatSearch, chatMenu, elNoob, mariaLopez, per
             <div className="contact__chat">
                 {chats.map((chat) => {
                     return (
-                        <article className="chat__friend">
+                        <article className="chat__friend" key={chat.id}>
                             <img className="chat__photo" src={chat.foto} alt={`Foto perfil ${chat.nombre}`} />
                             <div className="chat__content">
                                 <div className="content__comment">
@@ -93,7 +103,6 @@ export const Chat = ({ chatHeader, chatSearch, chatMenu, elNoob, mariaLopez, per
                                 </div>
                                 <p className="comment__message">{chat.ultimoComentario}</p>
                             </div>
-
                         </article>
                     )
                 })}
