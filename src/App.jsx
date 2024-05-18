@@ -57,17 +57,31 @@ export const App = () => {
         <div className="menu__state">
           <div className='state__message'>
             <img src={chat} onClick={() => handleClick('chats')} />
-            <span>3</span>
+            <span className='span__msg'>3</span>
+            <span className='span__name'>Chats</span>
           </div>
-          <img src={comunity} onClick={() => handleClick('comunidades')} />
-          <img src={states} onClick={() => handleClick('estados')} />
-          <img src={chanel} onClick={() => handleClick('canales')} />
+          <div>
+            <img src={comunity} onClick={() => handleClick('comunidades')} />
+            <span className='span__name'>Comunidades</span>
+          </div>
+          <div>
+            <img src={states} onClick={() => handleClick('estados')} />
+            <span className='span__name'>Estados</span>
+          </div>
+          <div>
+            <img src={chanel} onClick={() => handleClick('canales')} />
+            <span className='span__name'>Canales</span>
+          </div>
         </div>
         <div className="menu__configure">
           <div>
             <img src={settings} onClick={() => handleClick('configuracion')} />
+            <span className='span__name'>Configuracion</span>
           </div>
-          <img src={users} onClick={() => handleClick('perfil')} />
+          <div>
+            <img src={users} onClick={() => handleClick('perfil')} />
+            <span className='span__name'>Perfil</span>
+          </div>
         </div>
       </section>
       <section className="container__contact">
